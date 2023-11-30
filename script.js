@@ -71,13 +71,13 @@ let array_two=[];
 
  //Confronta i due array
 
- if(user_choice_one = user_choice_two){
+ if(user_choice_one == user_choice_two){
     console.log('I due array sono già uguali:)')
  }
  else if(user_choice_one<user_choice_two){
-    for(let i=user_choice; i<user_choice_two; i++){
+    for(let i=user_choice; i<=user_choice_two; i++){
         //Genero il numero
-        let numero=math.floor(math.random()*100+1);
+        let numero=Math.floor(Math.random()*100+1);
         //Metto il numero nell'array
         array_one.push(numero);
      }
@@ -86,9 +86,9 @@ let array_two=[];
      console.log('Ora sono uguali!');
  }
  else{
-    for(let i=user_choice_two; i<user_choice_one; i++){
+    for(let i=user_choice_two; i<=user_choice_one; i++){
         //Genero il numero
-        let numero=math.floor(math.random()*100+1);
+        let numero=Math.floor(Math.random()*100+1);
         //Metto il numero nell'array
         array_two.push(numero);
      }
