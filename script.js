@@ -27,7 +27,7 @@ let user_choice=prompt('Da quanti elementi è composto l\'array?');
 let array=[];
  for(let i=0; i<user_choice; i++){
     //Genero il numero
-    let numero=math.floor(math.random()*100+1);
+    let numero=Math.floor(Math.random()*100+1);
     //Metto il numero nell'array
     array.push(numero);
  }
