@@ -1,3 +1,4 @@
+//1. Esercizio della frutta 
 //Chiamiamo l'array frigorifero(contiene la frutta)
 let fridge =['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola' ];
 //Notiamo la pesca sul tavolo
@@ -15,3 +16,21 @@ for(let i=0; i<fridge.length; i++){
         console.log('Oh no, devo uscire a comprare il cocomero!');
     }
 }
+
+//2. Genera array a piacere con numeri randomici
+
+//Chiedi all'utente la grandezza dell'array
+
+let user_choice=prompt('Da quanti elementi è composto l\'array?')
+
+//Riempiamolo con numeri casuali
+let array=[];
+ for(let i=0; i<){
+    //Genero il numero
+    let numero=math.floor(math.random()*100+1);
+    //Metto il numero nell'array
+    array.push(numero);
+ }
+
+ //Mostra tutti i numeri
+ console.log(array);
