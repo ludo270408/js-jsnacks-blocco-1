@@ -21,7 +21,7 @@ for(let i=0; i<fridge.length; i++){
 
 //Chiedi all'utente la grandezza dell'array
 
-let user_choice=prompt('Da quanti elementi è composto l\'array?')
+let user_choice=prompt('Da quanti elementi è composto l\'array?');
 
 //Riempiamolo con numeri casuali
 let array=[];
@@ -39,4 +39,62 @@ let array=[];
  for(let i=0; i<5; i++){
     console.log(array[i]);
  }
+
+
+
+//3. Due array diversi che arrivano ad avere lo stesso numero
+
+let user_choice_one=prompt('Da quanti elementi è composto il primo array?');
+let user_choice_two=prompt('Da quanti elementi è composto il secondo array?')
+
+//Riempiamolo con numeri casuali
+let array_one=[];
+ for(let i=0; i<user_choice_one; i++){
+    //Genero il numero
+    let numero=math.floor(math.random()*100+1);
+    //Metto il numero nell'array
+    array_one.push(numero);
+ }
+ //Mostra tutti i numeri
+ console.log(array_one);
+
+ //Riempiamolo con numeri casuali
+let array_two=[];
+ for(let i=0; i<user_choice_two; i++){
+    //Genero il numero
+    let numero=math.floor(math.random()*100+1);
+    //Metto il numero nell'array
+    array_two.push(numero);
+ }
+ //Mostra tutti i numeri
+ console.log(array_two);
+
+ //Confronta i due array
+
+ if(user_choice_one = user_choice_two){
+    console.log('I due array sono già uguali:)')
+ }
+ else if(user_choice_one<user_choice_two){
+    for(let i=user_choice; i<user_choice_two; i++){
+        //Genero il numero
+        let numero=math.floor(math.random()*100+1);
+        //Metto il numero nell'array
+        array_one.push(numero);
+     }
+     //Mostra tutti i numeri
+     console.log(array_one);
+     console.log('Ora sono uguali!');
+ }
+ else{
+    for(let i=user_choice_two; i<user_choice_one; i++){
+        //Genero il numero
+        let numero=math.floor(math.random()*100+1);
+        //Metto il numero nell'array
+        array_two.push(numero);
+     }
+     //Mostra tutti i numeri
+     console.log(array_two);
+     console.log('Ora sono uguali!');
+ }
+
 
