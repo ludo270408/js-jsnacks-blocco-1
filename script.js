@@ -51,7 +51,7 @@ let user_choice_two=prompt('Da quanti elementi è composto il secondo array?')
 let array_one=[];
  for(let i=0; i<user_choice_one; i++){
     //Genero il numero
-    let numero=math.floor(math.random()*100+1);
+    let numero=Math.floor(Math.random()*100+1);
     //Metto il numero nell'array
     array_one.push(numero);
  }
@@ -62,7 +62,7 @@ let array_one=[];
 let array_two=[];
  for(let i=0; i<user_choice_two; i++){
     //Genero il numero
-    let numero=math.floor(math.random()*100+1);
+    let numero=Math.floor(Math.random()*100+1);
     //Metto il numero nell'array
     array_two.push(numero);
  }
