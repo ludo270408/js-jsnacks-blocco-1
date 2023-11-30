@@ -31,7 +31,12 @@ let array=[];
     //Metto il numero nell'array
     array.push(numero);
  }
-
  //Mostra tutti i numeri
  console.log(array);
+
+ //Stampa gli ultimi 5 elementi
+ array.reverse();
+ for(let i=0; i<5; i++){
+    console.log(array[i]);
+ }
 
