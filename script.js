@@ -25,7 +25,7 @@ let user_choice=prompt('Da quanti elementi è composto l\'array?')
 
 //Riempiamolo con numeri casuali
 let array=[];
- for(let i=0; i<){
+ for(let i=0; i<user_choice; i++){
     //Genero il numero
     let numero=math.floor(math.random()*100+1);
     //Metto il numero nell'array
@@ -34,3 +34,4 @@ let array=[];
 
  //Mostra tutti i numeri
  console.log(array);
+
